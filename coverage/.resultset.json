@@ -255,11 +255,51 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/skeleton_closet/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/Guest/Desktop/skeleton_closet/app/helpers/application_helper.rb": [
         1,
         null
       ],
+      "/Users/Guest/Desktop/skeleton_closet/app/channels/application_cable/channel.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/skeleton_closet/app/channels/application_cable/connection.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/skeleton_closet/app/jobs/application_job.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/skeleton_closet/app/mailers/application_mailer.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/skeleton_closet/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/Guest/Desktop/skeleton_closet/app/models/closet.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/skeleton_closet/app/models/skeleton.rb": [
+        1,
+        1,
         1,
         1,
         1,
@@ -272,21 +312,13 @@
         2,
         2,
         2,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/Guest/Desktop/skeleton_closet/app/models/skeleton.rb": [
-        1,
-        1,
-        1,
+        2,
+        2,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1499902084
+    "timestamp": 1499902547
   }
 }
