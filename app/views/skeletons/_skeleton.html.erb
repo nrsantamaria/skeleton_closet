@@ -1,5 +1,5 @@
-<%= form_for skeleton, :url => closet_skeleton_path(skeleton.closet) do |f| %>
-  <h4><%= f.check_box :hide %>
-  <%= f.submit "Hide Skeleton" %>
-  <%= f.label :hide, skeleton.name %></h4>
-<% end %>
+<h4><%= form_for skeleton, :url => closet_skeleton_path(skeleton.closet) do |f| %>
+<%= f.check_box :hide %>
+<%= f.submit "Hide Skeleton" %>
+<%= f.label :hide, skeleton.name %>
+<% end %></h4>

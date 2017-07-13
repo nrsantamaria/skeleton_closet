@@ -32,7 +32,10 @@ class SkeletonsController < ApplicationController
     @closet = Closet.find(params[:closet_id])
     @skeleton = Skeleton.find(params[:id])
     if @skeleton.update(skeleton_params)
-      redirect_to closet_path(@skeleton.closet)
+      respond_to do |format|
+        format.html { redirect_to closet_url(@skeleton.closet) }
+        format.js
+      end
     else
       render :edit
     end
