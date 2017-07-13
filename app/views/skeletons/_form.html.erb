@@ -1,0 +1,20 @@
+<%= render 'layouts/errors', :object => @skeleton %>
+<%= form_for [@closet, @skeleton] do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="form-group">
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
+  <div class="form-group">
+    <%= f.label :hide %>
+    <%= f.check_box :hide, value: true %>
+  </div>
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+  <p><%= f.submit %></p>
+<% end %>

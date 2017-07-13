@@ -10,3 +10,12 @@ Closet.destroy_all
 closet1 = Closet.create({name: 'Dread'})
 closet2 = Closet.create({name: 'Misery'})
 closet3 = Closet.create({name: 'Posterity'})
+
+Skeleton.destroy_all
+
+10.times do |index|
+  Skeleton.create!(name: Faker::Book.title,
+                  body: Faker::MostInterestingManInTheWorld.quote,
+                  picture: File.new('app/assets/images/missing.png'),
+                  closet_id: Faker::Number.between(1, 3))
+end

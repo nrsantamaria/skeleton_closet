@@ -1,1 +1,19 @@
-<h3>The Closet of <em><%= @closet.name %></em></h3>
+<%= link_to 'New Skeleton', new_closet_skeleton_path(@closet), id: 'new_skeleton', remote: true  %>
+<div class="row">
+  <div class="col-md-6">
+    <h3>Skeletons of <em><%= @closet.name %></em></h3>
+    <% if @visible_skeletons.any? %>
+      <% @visible_skeletons.each do |skeleton| %>
+        <p><%=  skeleton.name %></p>
+      <% end %>
+    <% else %>
+      <p>There are no skeletons in this closet. Yet...</p>
+    <% end %>
+  </div>
+  <div class="col-md-6">
+    <div class="closet">
+      <h3>Hidden in Closet</h3>
+        <%= render @hidden_skeletons %>
+    </div>
+  </div>
+</div>
