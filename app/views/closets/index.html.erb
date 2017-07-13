@@ -1,0 +1,9 @@
+<h1>All the Closets</h1>
+
+<% if @closets.any? %>
+  <% @closets.each do |closet| %>
+    <p><%= link_to closet.name, closet_path(closet) %></p>
+  <% end %>
+<% else %>
+  <p>This house is closetless.</p>
+<% end %>
