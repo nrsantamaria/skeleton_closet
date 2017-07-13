@@ -1,5 +1,6 @@
-<%= render 'layouts/errors', :object => @skeleton %>
-<%= form_for [@closet, @skeleton] do |f| %>
+<div id="skeleton-form">  
+  <%= render 'layouts/errors', :object => @skeleton %>
+  <%= form_for [@closet, @skeleton], remote: true do |f| %>
   <div class="form-group">
     <%= f.label :name %>
     <%= f.text_field :name %>
@@ -17,4 +18,5 @@
     <%= f.file_field :image %>
   </div>
   <p><%= f.submit %></p>
-<% end %>
+  <% end %>
+</div>

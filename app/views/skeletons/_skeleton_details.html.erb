@@ -1,0 +1,9 @@
+<%= image_tag(@skeleton.picture.url(:medium)) %>
+
+<p>
+  <%= @skeleton.body %>
+</p>
+
+<%= link_to "Edit Skeleton", edit_closet_skeleton_path(@closet, @skeleton) %> | <%= link_to "Delete Skeleton", closet_skeleton_path(@closet, @skeleton),
+             :data => {:confirm => "Are you sure?",
+            :method => "delete"} %>
