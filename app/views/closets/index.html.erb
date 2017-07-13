@@ -2,7 +2,7 @@
 
 <% if @closets.any? %>
   <% @closets.each do |closet| %>
-    <p><%= link_to closet.name, closet_path(closet) %></p>
+    <h3><%= link_to closet.name, closet_path(closet) %></h3>
   <% end %>
 <% else %>
   <p>This house is closetless.</p>

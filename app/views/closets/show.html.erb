@@ -1,4 +1,4 @@
-<%= link_to 'New Skeleton', new_closet_skeleton_path(@closet), id: 'new_skeleton', remote: true %>
+<h4><%= link_to 'New Skeleton', new_closet_skeleton_path(@closet), id: 'new_skeleton', remote: true %></h4>
 
 <div class="row">
   <div class="col-md-6">
@@ -6,7 +6,7 @@
       <h3>Skeletons of <em><%= @closet.name %></em></h3>
       <%= render @visible_skeletons %>
     </div>
-  </div> 
+  </div>
   <div class="col-md-6">
     <div class="closet">
       <h3>Hidden in Closet</h3>

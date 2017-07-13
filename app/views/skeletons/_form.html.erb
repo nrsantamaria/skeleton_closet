@@ -1,22 +1,22 @@
-<div id="skeleton-form">  
+<div id="skeleton-form">
   <%= render 'layouts/errors', :object => @skeleton %>
   <%= form_for [@closet, @skeleton], remote: true do |f| %>
   <div class="form-group">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, {class: "form-control"}  %>
   </div>
   <div class="form-group">
     <%= f.label :body %>
-    <%= f.text_area :body %>
+    <%= f.text_area :body, {class: "form-control"}  %>
   </div>
   <div class="form-group">
-    <%= f.label :hide %>
-    <%= f.check_box :hide, value: true %>
+    <%= f.label :hide_in_closet %>
+    <%= f.check_box :hide %>
   </div>
   <div class="form-group">
     <%= f.label :image %>
     <%= f.file_field :image %>
   </div>
-  <p><%= f.submit %></p>
+  <p><%= f.submit nil, {class: "btn btn-default"} %></p>
   <% end %>
 </div>
