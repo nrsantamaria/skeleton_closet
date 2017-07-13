@@ -1,0 +1,10 @@
+<div id="closet-form">
+  <%= render 'layouts/errors', :object => @closet %>
+  <%= form_for @closet, remote: true do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, {class: "form-control"}  %>
+  </div>
+  <p><%= f.submit nil, {class: "btn btn-default"} %></p>
+  <% end %>
+</div>

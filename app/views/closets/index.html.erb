@@ -1,9 +1,7 @@
 <h1>All the Closets</h1>
 
-<% if @closets.any? %>
-  <% @closets.each do |closet| %>
-    <h3><%= link_to closet.name, closet_path(closet) %></h3>
-  <% end %>
-<% else %>
-  <p>This house is closetless.</p>
-<% end %>
+<div id="closets">
+  <h3><%= render @closet %></h3>
+</div>
+<hr>
+<h3><%= link_to "Add a Closet", new_closet_path, id:'new_closet', remote: true %></h3>

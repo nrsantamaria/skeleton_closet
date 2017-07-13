@@ -46,7 +46,7 @@ class SkeletonsController < ApplicationController
 
   private
   def skeleton_params
-    params.require(:skeleton).permit(:name, :body, :hide, :picture   )
+    params.require(:skeleton).permit(:name, :body, :hide, :picture)
   end
 
 end
