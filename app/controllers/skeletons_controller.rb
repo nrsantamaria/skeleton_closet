@@ -13,9 +13,9 @@ class SkeletonsController < ApplicationController
   def create
     @closet = Closet.find(params[:closet_id])
     @skeleton = @closet.skeletons.new(skeleton_params)
-    if @skeleton.save
+    if @skeleton.save!
       respond_to do |format|
-        format.html { redirect_to closet_path(@skeleton.closet) }
+        format.html { redirect_to closet_url(@skeleton.closet) }
         format.js
       end
     else

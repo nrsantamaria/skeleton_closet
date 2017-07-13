@@ -9,7 +9,7 @@ Closet.destroy_all
 
 closet1 = Closet.create({name: 'Dread'})
 closet2 = Closet.create({name: 'Misery'})
-closet3 = Closet.create({name: 'Posterity'})
+closet3 = Closet.create({name: 'Regret'})
 
 Skeleton.destroy_all
 
